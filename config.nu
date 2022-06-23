@@ -34,3 +34,8 @@ add-path PATH $"($env.HOME)/bin"
 
 ## rust
 let-env RUSTUP_DIST_SERVER = "https://mirrors.tuna.tsinghua.edu.cn/rustup"
+
+## quick cd
+def-env cd-github [] {
+    cd ~/GitHub
+}
