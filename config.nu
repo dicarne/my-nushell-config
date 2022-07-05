@@ -41,6 +41,6 @@ def-env cd-github [] {
 }
 
 def newdir [dirname] {
-    mkdir -p $dirname
+    mkdir $dirname
     cd $dirname
 }
