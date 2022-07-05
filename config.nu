@@ -39,3 +39,8 @@ let-env RUSTUP_DIST_SERVER = "https://mirrors.tuna.tsinghua.edu.cn/rustup"
 def-env cd-github [] {
     cd ~/GitHub
 }
+
+def newdir [dirname] {
+    mkdir -p $dirname
+    cd $dirname
+}
