@@ -40,7 +40,8 @@ def-env cd-github [] {
     cd ~/GitHub
 }
 
-def newdir [dirname] {
-    mkdir $dirname
-    cd $dirname
+def-env newdir [dirname] {
+    let newname = ($dirname | to text)
+    mkdir $newname
+    cd $newname
 }
